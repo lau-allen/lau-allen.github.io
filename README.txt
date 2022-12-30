@@ -31,9 +31,11 @@ Credits:
 		Scrollex (github.com/ajlkn/jquery.scrollex)
 		Responsive Tools (github.com/ajlkn/responsive-tools)
 		
-Images Credits:
+External Images Credits:
 C19 https://www.who.int/health-topics/coronavirus#tab=tab_1
 Hospitalmortality https://www.wbur.org/cognoscenti/2020/03/31/advance-care-planning-coronavirus-evan-shannon-abraar-karan
 Mnist https://gas.graviti.com/dataset/hellodataset/MNIST
 Music https://www.helpguide.org/articles/stress/12-ways-to-reduce-stress-with-music.htm
 Webscrape https://www.ccny.cuny.edu/registrar/fall-2022-academic-calendar
+CCNY https://www1.cuny.edu/mu/forum/2019/10/22/ccny-is-once-again-a-green-college-according-to-the-princeton-review/
+Health data https://allea.org/international-transfer-of-health-data-for-research/
