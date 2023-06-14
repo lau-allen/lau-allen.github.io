@@ -1,0 +1,158 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Allen Lau</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<a href="index.html" class="logo"><strong>Allen Lau</strong> <span>Developer Portfolio</span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="aboutme.html">About Me</a></li>
+						</ul>
+						<ul class="actions stacked">
+							
+						</ul>
+					</nav>
+
+				<!-- Banner -->
+				<!-- Note: The "styleN" class below should match that of the header element. -->
+					<section id="banner" class="style2">
+						<div class="inner">
+							<span class="image">
+								<img src="images/pic07.jpg" alt="" />
+							</span>
+							<header class="major">
+								<h1>SignLingo: Sign Language Interpreter</h1>
+							</header>
+							<div class="content">
+								<p>Development of an interpreter application which leverages computer vision to detect and track hand signs captured by a camera, while utilizing machine learning techniques to accurately classify the letter.</p>
+							</div>
+						</div>
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h2>Overview</h2>
+									</header>
+									<p>
+										Clear and effective communication is a vital component of society. However, for individuals who rely on sign language, interacting with those who are unfamiliar with this mode of communication can be a difficult task. The development of a model capable of receiving a video stream from a camera and accurately classifying the signed letters can prove to be an invaluable tool. This technology can be utilized in various settings, including hospitals, schools, and government offices, to facilitate seamless communication and eliminate any potential communication barriers.
+										<br><br>
+										The problem of sign language alphabet recognition can be formulated as a machine learning problem. The objective is to create a system that can identify hand motions for every letter of the alphabet and correctly assign them to that letter. The intricacy and variety of sign language movements, as well as the requirement that the system be adaptable to changes in backdrop, lighting, and hand orientation, make this a difficult job. The creation of an effective method for deciphering sign language can greatly improve mobility and communication for the deaf and hard of hearing population, enabling them to interact with hearing people more effectively.   
+									</p>
+									<p><b>Technical Details: </b><br> Tech Stack: Python (Tensorflow, OpenCV, Mediapipe, Scikit-Learn, Pandas, NumPy)</p>
+									Process Overview: 
+									<ol>
+										<li>Data loading</li>
+										<li>Exploratory data analysis</li>
+										<li>Feature extraction and engineering (Data Augmentation, Histogram of Oriented Gradients)</li>
+										<li>Dimensionality reduction (Principal Component Analysis, Linear Discriminant Analysis)</li>
+										<li>Modeling with hyper-parameter tuning (including Naive Bayes, Logistic Regression, Random Forest, Support Vector Machines, XGBoost, Stacking Ensemble Classifier, and Convolutional Neural Networks)</li>
+										<li>Evaluation</li>
+									  </ol>
+									  For each model, the following metrics are used to determine model performance:
+									  <ol>
+										<li>Classification report (accuracy, precision, recall, f1-score, and support)</li>
+										<li>Matthews correlation coefficient (MCC)</li>
+										<li>Kohen Kappa Score</li>
+									  </ol>
+									  After the best performing model is identified, the following tools are used to accomplish hand detection and interfacing with a camera to obtain input video for the trained model:
+									  <ol>
+										<li>OpenCV</li>
+										<li>Mediapipe</li>
+									  </ol>
+									
+									<ul class="actions">
+										<li><a href="https://github.com/lau-allen/sign-language-interpreter.git" class="button next">Link to Github Repo</a></li>
+									</ul>
+							
+									<header class="major">
+										<h2>Results</h2>
+									</header>
+									<p>Please review the notebook for the methodology and explanations for identifying the best performing model: <a href="https://github.com/lau-allen/sign-language-interpreter/blob/main/reports/Sign_Language_Interpreter_FinalNotebook.ipynb">Python Notebook</a></p>
+									<iframe src="https://github.com/lau-allen/sign-language-interpreter/blob/main/reports/Sign_Language_Interpreter_FinalNotebook.ipynb" width="100%" height="600px"></iframe>
+									<span class="image main"><img src="images/sign_language_interpreter.png" alt="" /></span>
+								</div>
+							</section>
+
+				<!-- contact -->
+				<section id="contact">
+					<div class="inner">
+						<section>
+							<div class="inner">
+								<header class="major">
+									<h2>Want to connect?</h2>
+								</header>
+								<p>Connect with me through LinkedIn, or reach out to me via email or phone number.</p>
+								<ul class="actions">
+									<li><a href="https://www.linkedin.com/in/allenlau2019/" class="button next">LinkedIn</a></li>
+								</ul>
+							</div>
+						</section>
+						<section class="split">
+							<section>
+								<div class="contact-method">
+									<span class="icon solid alt fa-envelope"></span>
+									<h3>Email</h3>
+									<span>allenlau3@outlook.com</span>
+								</div>
+							</section>
+							<section>
+								<div class="contact-method">
+									<span class="icon solid alt fa-phone"></span>
+									<h3>Phone</h3>
+									<span>(484) 855-9707</span>
+								</div>
+							</section>
+						</section>
+					</div>
+				</section>
+
+			<!-- Footer -->
+				<footer id="footer">
+					<div class="inner">
+						<ul class="copyright">
+							<li>&copy; <a href="https://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</div>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
