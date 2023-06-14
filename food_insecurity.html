@@ -1,0 +1,150 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Allen Lau</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<a href="index.html" class="logo"><strong>Allen Lau</strong> <span>Developer Portfolio</span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="aboutme.html">About Me</a></li>
+						</ul>
+						<ul class="actions stacked">
+							
+						</ul>
+					</nav>
+
+				<!-- Banner -->
+				<!-- Note: The "styleN" class below should match that of the header element. -->
+					<section id="banner" class="style2">
+						<div class="inner">
+							<span class="image">
+								<img src="images/pic07.jpg" alt="" />
+							</span>
+							<header class="major">
+								<h1>Food Insecurity through Big Data Analysis</h1>
+							</header>
+							<div class="content">
+								<p>Methodology to explore the food insecurity problem in NYC by leveraging Apache Spark and Google Cloud Dataproc to quickly and efficiently parse through ~10 GB (9.2 million rows) of data in less than 2 minutes.</p>
+							</div>
+						</div>
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h2>Overview</h2>
+									</header>
+									<p>
+										The goal of these notebooks is to study the food insecurity problem by looking at the listed prices of various food items across neighborhoods in NYC. Our hypothesis is that people living in areas with higher food insecurity problems would pay more for the same items compared to those in more secured areas. For the scope of work, we will only assess food products from KeyFoods supermarkets, one of the top 4 Supermarket Leaders in Metro New York (according Food Trade News 2021 report). This is <b>Task 1</b>.
+										<br><br>
+										Additionally, we will determine the distance people traveled to grocery stores by census block group (CBG) using Safegraph data. In particular, we would like to know for each CBG, the average distance they traveled to the listed grocery stores in March 2019, October 2019, March 2020, and October 2020. (We select March and October to avoid summer and holidays with more noise from tourists and festivity shopping). The distances will be projected in the NAD83 plane (EPSG:2263) to increase the accuracy of the calculations. This is <b>task 2</b>.
+									</p>
+									<p><b>Technical Details: </b><br> Tech Stack: Google Cloud Dataproc & Storage, Apache Spark (PySpark), Python pyproj</p>
+									Process Overview:
+									<ol>
+										<li>For each problem, a Jupyter Notebook will be used to develop the initial logic to accomplish each task. The logic will utilize either PySpark Resilient Distributed Datasets (RDD) or PySpark Dataframes, such that we are able to scale out to address working with big data.</li>
+										<li>The data is loaded from a local directory, if the file size is considered small, or is loaded from Google Cloud Platform Buckets, if the file size is considered large. </li>
+										<li>The initial logic developed in the notebook will be converted into a Python script that can be ran on Google Cloud Dataproc Clusters. </li>
+										<li>The outputs are written to Buckets for review. </li>
+									  </ol>
+									
+									<ul class="actions">
+										<li><a href="https://github.com/lau-allen/foodinsecurity-analysis.git" class="button next">Link to Github Repo for Task 1</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="https://github.com/lau-allen/foodinsecurity-analysis-part2.git" class="button next">Link to Github Repo for Task 2</a></li>
+									</ul>
+							
+									<header class="major">
+										<h2>Results</h2>
+									</header>
+									<p>Leveraging Google Cloud Platform and Apache Spark, parsing through ~10 GB (9.2 million rows) of data and computing the results for the objectives took just 1 minute and 55 seconds. Please review the results for each task within their respective notebooks below. </p>
+									<p>Food Insecurity Analysis Task 1: <a href="https://github.com/lau-allen/foodinsecurity-analysis/blob/main/NYC_FoodInsecurity_Analysis.ipynb">Python Notebook</a></p>
+									<iframe src="https://nbviewer.org/url/github.com/lau-allen/foodinsecurity-analysis/blob/main/NYC_FoodInsecurity_Analysis.ipynb" width="100%" height="600px"></iframe>
+									<p>Food Insecurity Analysis Task 2: <a href="https://github.com/lau-allen/foodinsecurity-analysis-part2/blob/main/NYC_FoodInsecurity_Analysis.ipynb">Python Notebook</a></p>
+									<iframe src="https://nbviewer.org/url/github.com/lau-allen/foodinsecurity-analysis-part2/blob/main/NYC_FoodInsecurity_Analysis.ipynb" width="100%" height="600px"></iframe>
+								</div>
+							</section>
+
+				<!-- contact -->
+				<section id="contact">
+					<div class="inner">
+						<section>
+							<div class="inner">
+								<header class="major">
+									<h2>Want to connect?</h2>
+								</header>
+								<p>Connect with me through LinkedIn, or reach out to me via email or phone number.</p>
+								<ul class="actions">
+									<li><a href="https://www.linkedin.com/in/allenlau2019/" class="button next">LinkedIn</a></li>
+								</ul>
+							</div>
+						</section>
+						<section class="split">
+							<section>
+								<div class="contact-method">
+									<span class="icon solid alt fa-envelope"></span>
+									<h3>Email</h3>
+									<span>allenlau3@outlook.com</span>
+								</div>
+							</section>
+							<section>
+								<div class="contact-method">
+									<span class="icon solid alt fa-phone"></span>
+									<h3>Phone</h3>
+									<span>(484) 855-9707</span>
+								</div>
+							</section>
+						</section>
+					</div>
+				</section>
+
+			<!-- Footer -->
+				<footer id="footer">
+					<div class="inner">
+						<ul class="copyright">
+							<li>&copy; <a href="https://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</div>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
