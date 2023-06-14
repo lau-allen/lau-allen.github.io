@@ -61,8 +61,18 @@
 									<header class="major">
 										<h2>Overview</h2>
 									</header>
-									<p>Breakthrough rates, or the proportion of the population who are vaccinated against infection of Covid-19 but still are susceptible to getting infected, and the percentage of vaccines not offering protection are metrics that are vital to understanding how protected a population is against Covid. However, this information is highly affected by the vaccine efficacy of the different available vaccines. <br/><br/> This dashboard explores breakthrough rates and percentage of vaccines not offering protection in different countries by vaccine variant and Covid-19 variant, over time. </p>
-									<p>Technical Details: Python (dash, plotly, pandas), CSS</p>
+									<p>Understanding the level of protection within a population against Covid-19 is crucial, and two key metrics play a significant role in this regard: breakthrough rates and the percentage of vaccines that do not offer complete protection. These metrics provide valuable insights into the susceptibility of individuals who have been vaccinated but are still at risk of infection. However, it's important to note that these metrics are heavily influenced by the efficacy of the available vaccines.<br><br>
+										To shed light on this information, the dashboard presented here explores breakthrough rates and the percentage of vaccines not providing full protection across different countries. It explores these metrics in relation to specific vaccine variants and Covid-19 variants, offering a comprehensive view of how they evolve over time. By analyzing this data, we gain a deeper understanding of the effectiveness of vaccines in different contexts, aiding us in making informed decisions and implementing necessary measures to combat the pandemic.</p>
+									<p><b>Technical Details:</b><br> Tech Stack: Python (Dash, Plotly, Pandas), HTML / CSS</p>
+									<ol>
+										<li>Compiled data from various tables available at <a href="https://ourworldindata.org/covid-vaccinations">ourworldindata.org/covid-vaccinations</a>.</li>
+										<li>Exported the data as CSV files.</li>
+										<li>Read the CSV files into Pandas DataFrames for further analysis.</li>
+										<li>Performed a multitude of data manipulations, including filling techniques to address missing values and calculations to derive breakthrough rates, using Python.</li>
+										<li>Plotted the resultant data using Plotly.</li>
+										<li>Created a dashboard using Dash to display the visualizations.</li>
+									  </ol>
+									
 									<ul class="actions">
 										<li><a href="https://github.com/lau-allen/C19VaccineEfficacyDashboard" class="button next">Link to Github Repo</a></li>
 									</ul>
