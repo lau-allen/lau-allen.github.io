@@ -1,0 +1,160 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Allen Lau</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<a href="index.html" class="logo"><strong>Allen Lau</strong> <span>Developer Portfolio</span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="aboutme.html">About Me</a></li>
+						</ul>
+						<ul class="actions stacked">
+							
+						</ul>
+					</nav>
+
+				<!-- Banner -->
+				<!-- Note: The "styleN" class below should match that of the header element. -->
+					<section id="banner" class="style2">
+						<div class="inner">
+							<span class="image">
+								<img src="images/pic07.jpg" alt="" />
+							</span>
+							<header class="major">
+								<h1>Foogle: The Next Gen Search Engine</h1>
+							</header>
+							<div class="content">
+								<p>Creation of a search engine that compiles the results from other major search engines, such that it enables refined secondary searches, reduces the bias of search results by introducing a keywork ranking algorithm, and removes ad results.</p>
+							</div>
+						</div>
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h2>Overview</h2>
+									</header>
+									<p>
+										Foogle is a search engine aggregator, which compiles the results from other widely used search engines, stores the results into a mySQL database, and then displays the most relevant results by keyword to the consumer. 
+										<br><br>
+										Why is this technology necessary? Traditional search engines, being from profit-oriented companies, prioritize displaying ads in search results. Moreover, they utilize ranking algorithms that are typically influenced by business interests. Foogle aims to overcome these limitations by using a word frequency algorithm that not influenced by business motives. Additionally, Foogle filters out ads from the compiled results, ensuring a more relevant and unbiased search experience. Lastly, by storing the search results from other search engines in a database, Foogle enables secondary searches using natural language processing and keyword ranking, resulting in more robust and accurate searches.
+									</p>
+									<p><b>Technical Details: </b><br> Tech Stack: Python (Asyncio, Aiohttp, BeautifulSoup, MySQL Connector, NLTK), MySQL, Flask, HTML / CSS</p>
+									Process Overview for Populating the Database: 
+									<ol>
+										<li>Retrieve query from end-user</li>
+										<li>Send HTTP requests from Google, Bing, Yahoo, and DuckDuckGo to obtain URLs</li>
+										<li>Perform ad and duplicate filtering</li>
+										<li>Clean up and manipulate HTML text data to retrieve wanted information</li>
+										<li>Populate the database with the information</li>
+									  </ol>
+									  Process Overview for Querying the Database:
+									  <ol>
+										<li>Retrieve websites from the database based on the end-user query relevance with the text from the URL using Natural Language Processing techniques</li>
+										<li>Retrieve keywords from the end-user query by removing stopwords</li>
+										<li>Count the keywords within the text of the retrieved websites</li>
+										<li>Rank the retrieved websites based on keyword counts</li>
+										<li>Display the results to the end-user on the website</li>
+									  </ol>
+									  The following tools are used to retrieve or display information from the end-user and send that information to the back-end:
+									  <ol>
+										<li>HTML / CSS</li>
+										<li>Flask Web Framework</li>
+									  </ol>
+									
+									<ul class="actions">
+										<li><a href="https://github.com/lau-allen/search-engine.git" class="button next">Link to Github Repo</a></li>
+									</ul>
+							
+									<header class="major">
+										<h2>Results</h2>
+									</header>
+									With the above implementation, we are able to request information from over 50 different websites asynchronously and populate the website URL, title, and text in under 30 seconds on average. The mySQL Connector execution to populate the database has the greatest opportunities for speed efficiency. <br><br>
+									<p>Please review the presentation slide deck for a summary of the search engine implementation: <a href="https://github.com/lau-allen/search-engine/blob/main/search_engine_presentation.pdf">Slides</a></p>
+									<span class="image main"><img src="images/search_engine_index.png" alt="" /></span>
+									<span class="image main"><img src="images/search_engine_results.png" alt="" /></span>
+								</div>
+							</section>
+
+				<!-- contact -->
+				<section id="contact">
+					<div class="inner">
+						<section>
+							<div class="inner">
+								<header class="major">
+									<h2>Want to connect?</h2>
+								</header>
+								<p>Connect with me through LinkedIn, or reach out to me via email or phone number.</p>
+								<ul class="actions">
+									<li><a href="https://www.linkedin.com/in/allenlau2019/" class="button next">LinkedIn</a></li>
+								</ul>
+							</div>
+						</section>
+						<section class="split">
+							<section>
+								<div class="contact-method">
+									<span class="icon solid alt fa-envelope"></span>
+									<h3>Email</h3>
+									<span>allenlau3@outlook.com</span>
+								</div>
+							</section>
+							<section>
+								<div class="contact-method">
+									<span class="icon solid alt fa-phone"></span>
+									<h3>Phone</h3>
+									<span>(484) 855-9707</span>
+								</div>
+							</section>
+						</section>
+					</div>
+				</section>
+
+			<!-- Footer -->
+				<footer id="footer">
+					<div class="inner">
+						<ul class="copyright">
+							<li>&copy; <a href="https://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</div>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
