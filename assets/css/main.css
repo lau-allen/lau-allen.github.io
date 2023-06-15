@@ -1792,11 +1792,11 @@ input, select, textarea {
 			}
 
 		header.major > p {
-			font-size: 0.7em;
+			font-size: 0.9em;
 			font-weight: 600;
-			letter-spacing: 0.25em;
+			/* letter-spacing: 0.25em; */
 			margin-bottom: 0;
-			text-transform: uppercase;
+			/* text-transform: uppercase; */
 		}
 
 		body.is-ie header.major > :first-child:after {
@@ -2523,7 +2523,7 @@ input, select, textarea {
 		font-size: 0.8em;
 		font-weight: 600;
 		height: 3.5em;
-		letter-spacing: 0.25em;
+		/* letter-spacing: 0.25em; */
 		line-height: 3.5em;
 		padding: 0 1.75em;
 		text-align: center;
@@ -3474,10 +3474,10 @@ input, select, textarea {
 				}
 
 				#banner > .inner .content p {
-					font-size: 0.8em;
+					/* font-size: 0.8em; */
 					font-weight: 600;
-					letter-spacing: 0.25em;
-					text-transform: uppercase;
+					/* letter-spacing: 0.25em; */
+					/* text-transform: uppercase; */
 				}
 
 		#banner.major {
@@ -3861,7 +3861,7 @@ input, select, textarea {
 						letter-spacing: 0.25em;
 						line-height: 4em;
 						text-decoration: none;
-						text-transform: uppercase;
+						/* text-transform: uppercase; */
 					}
 
 					#menu ul.links > li > .button {
