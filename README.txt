@@ -39,3 +39,6 @@ Music https://www.helpguide.org/articles/stress/12-ways-to-reduce-stress-with-mu
 Webscrape https://www.ccny.cuny.edu/registrar/fall-2022-academic-calendar
 CCNY https://www1.cuny.edu/mu/forum/2019/10/22/ccny-is-once-again-a-green-college-according-to-the-princeton-review/
 Health data https://allea.org/international-transfer-of-health-data-for-research/
+Food insecurity https://helpingpeople.org/blog/what-food-insecurity-means-for-a-childs-development/
+Sign language https://www.languagesunlimited.com/sign-languages-only-related-to-making-signs-with-the-hands-is-this-true/
+Search engine https://botlabs.us/blog/the-importance-of-search-schema-for-seo/
