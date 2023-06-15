@@ -3530,6 +3530,32 @@ input, select, textarea {
 			opacity: 0;
 		}
 
+		#banner .actions {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: flex-start;
+		  }
+		  
+		  #banner .actions li {
+			flex: 0 0 auto;
+			margin-right: 0.5em;
+			text-align: center;
+			margin-bottom: 0.5em;
+		  }
+		  
+		  #banner .actions li:last-child {
+			margin-right: 0;
+		  }
+		  
+		  @media screen and (max-width: 480px) {
+			#banner .actions li {
+			  flex-basis: 100%;
+			  text-align: left;
+			  margin-right: 0;
+			  margin-bottom: 1em;
+			}
+		  }
+
 		@media screen and (max-width: 1280px) {
 
 			#banner {
